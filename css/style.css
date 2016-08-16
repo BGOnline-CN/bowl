@@ -1,0 +1,27 @@
+/*!
+ * Project main stylesheet
+ * author: BGOnline
+ * version 1.0 2016-3-11
+ * http://www.bgonline.cn
+ * @media screen and () and () { }
+ * @import url(style.css) screen and(min-width: 1000px);
+ */
+ 
+
+html, body, header, section, aside, article, footer, iframe, textarea, table, tbody, thead, tfoot, input, form,
+div, ul, li, nav, span, img, tr, th, td, h1, h2, h3, dl, dt, dd, a, i, p {
+  font: 14px / 1.5 "Helvetica Neue", Helvetica,Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  list-style: none;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix { 
+  overflow: auto; 
+  _height: 1%;
+}
+
+a:hover { text-decoration: none; }
+a:link { text-decoration: none; }
+a:focus { outline: none; }
