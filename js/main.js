@@ -5,18 +5,8 @@
  * http://www.bgonline.cn
  */
 
-function main() {
+var app = angular.module("BGOnline_App", []);
 
-    this.IEAlert = function() { $('body').iealert(); }
-    
-
-};
-
-var Main = new main();
-
-//Function initialization
-jQuery(document).ready(function($) {
-    
-  Main.IEAlert();
+app.controller('BGOnline_Controller', ['$scope', '$sce', '$http', function($scope, $sce, $http) { 
   
-});
+}]);
