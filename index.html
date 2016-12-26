@@ -1,19 +1,16 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn" data-ng-app="BGOnline_App" data-ng-controller="BGOnline_Controller">
+<!DOCTYPE html>
+<html lang="zh-cn" data-ng-app="bgoApp" data-ng-controller="bgoCtrl">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{site.description}}">
+    <meta name="keywords" content="{{site.keywords}}">
     <link rel="shortcut icon" href="images/favicon.ico">
     
-  <title></title>
+  <title data-ng-bind="site.title"></title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/non-responsive.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <!--<link rel="stylesheet" href="js/iealert/style.css">-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <!--link rel="stylesheet" href="" media="screen and ()"-->
   <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
@@ -21,24 +18,40 @@
   <![endif]-->
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="row">
-            
-      </div>
-    </div>
-  </header>  
-  <section></section>
+  <section>
+    <header></header>
+  </section>
   <footer></footer>
+  <script> 
+      var ie = (function() {
+          var v = 3,
+              div = document.createElement('div'),
+              all = div.getElementsByTagName('i');
+          while (
+              div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+              all[0]
+          );
+          return v > 4 ? v : false;
+      });
 
+      var getOs = function() { 
+          if(!!window.ActiveXObject || "ActiveXObject" in window) {
+              if(!ie()) {
+                  return;
+              }else {
+                  alert("浏览器版本过低！");
+              }
+          }
+      }();
+  </script>
   <script src="js/angular.min.js"></script>
-  <!--<script src="js/iealert/iealert.js"></script>-->
-  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 <!--
   Project main html
   author: BGOnline
-  version 1.0 2016-3-11
+  version 1.0 2016-12-26
   http://www.bgonline.cn
 -->
 </html>
