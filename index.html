@@ -9,14 +9,14 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     
   <title data-ng-bind="site.title"></title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="css/non-responsive.min.css">-->
+  <!--bootstrap包括了normalize.css-->
+  <!--<link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">-->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <!--link rel="stylesheet" href="" media="screen and ()"-->
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="/node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/node_modules/respond.js/dest/respond.min.js"></script>
   <![endif]-->
 </head>
 <body>
@@ -46,10 +46,11 @@
       }
     }();
   </script>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/angular.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 <!--
   Project main html
