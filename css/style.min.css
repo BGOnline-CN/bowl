@@ -7,8 +7,7 @@
  * @import url(style.css) screen and(min-width: 1000px);
  */
  
-/* 引用了normalize.css 以下重置可以不要 */
-/*html, body, header, section, aside, article, footer, iframe, textarea, table, tbody, thead, tfoot, input, form,
+html, body, header, section, aside, article, footer, iframe, textarea, table, tbody, thead, tfoot, input, form,
 div, ul, li, nav, span, img, tr, th, td, h1, h2, h3, dl, dt, dd, a, i, p {
   font:14px / 1.5 "Helvetica Neue", Helvetica,Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
   list-style: none;
@@ -30,4 +29,4 @@ body {
 
 a:hover { text-decoration: none; }
 a:link { text-decoration: none; }
-a:focus { outline: none; }*/
+a:focus { outline: none; }
