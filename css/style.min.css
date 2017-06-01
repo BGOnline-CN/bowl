@@ -21,16 +21,9 @@ div, ul, li, nav, span, img, tr, th, td, h1, h2, h3, dl, dt, dd, a, i, p {
   _height: 1%;
 }
 
-html { overflow-x: hidden; }
-body {
-  overflow-x: hidden;
-  position: relative;
-}
-
 a:hover { text-decoration: none; }
 a:link { text-decoration: none; }
 a:focus { outline: none; }
-
 
 .center {
   text-align: center;
