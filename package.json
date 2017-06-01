@@ -1,5 +1,5 @@
 {
-  "name": "bowl",
+  "name": "itmonapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -9,8 +9,8 @@
   "author": "BGONLINE.CN",
   "license": "ISC",
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.3",
     "angular": "^1.6.4",
+    "angular-ui-router": "^0.3.2",
     "bootstrap": "^3.3.7",
     "html5shiv": "^3.7.3",
     "jquery": "^3.2.1",
