@@ -112,3 +112,10 @@ a:focus { outline: none; }
           -ms-flex: 8; 
               flex: 8; 
 }
+
+/* partials */
+header > .nav, footer > .nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
