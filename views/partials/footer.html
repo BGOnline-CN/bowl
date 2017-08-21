@@ -1,0 +1,38 @@
+<!--占位符 解决footer遮挡部分内容的问题-->
+<div class="hold2"></div>
+<div class="nav flex-box">
+  <a ui-sref="app.home" 
+     class="box-flex-1" 
+     ng-class="{ true: 'active' }[is_active == '/home']">
+    <i class="fa fa-home"></i>
+    <p>主页</p>
+  </a>
+  <a ui-sref="app.blessing" 
+     class="box-flex-1" 
+     ng-class="{ true: 'active' }[is_active == '/blessing']">
+    <i class="fa fa-eercast"></i>
+    <p>祝福墙</p>
+  </a>
+  <a ui-sref="app.love" 
+     class="box-flex-1" 
+     ng-class="{ true: 'active' }[is_active == '/love']">
+    <i class="fa fa-diamond"></i>
+    <p>LOVE</p>
+  </a>
+  <a ui-sref="app.discover" 
+     class="box-flex-1" 
+     ng-class="{ true: 'active' }[is_active == '/discover']">
+    <i class="fa fa-wpexplorer"></i>
+    <p>发现</p>
+  </a>
+  <a ui-sref="app.my" 
+     class="box-flex-1" 
+     ng-class="{ true: 'active' }[is_active == '/my']">
+    <i class="fa fa-user-o"></i>
+    <p>我的</p>
+  </a>
+</div>
+<script>
+  // 初始化占位符高度
+  $('.hold2').height($('footer > .nav').outerHeight());
+</script>
