@@ -21,28 +21,6 @@
 </head>
 <body>
   <div ui-view></div>
-  <script> 
-    var ie = (function() {
-      var v = 3,
-        div = document.createElement('div'),
-        all = div.getElementsByTagName('i');
-      while (
-        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
-        all[0]
-      );
-      return v > 4 ? v : false;
-    });
-
-    var getOs = function() { 
-      if(!!window.ActiveXObject || "ActiveXObject" in window) {
-        if(!ie()) {
-          return;
-        }else {
-          alert("浏览器版本过低！");
-        }
-      }
-    }();
-  </script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
